@@ -1,2 +1,2 @@
 # Landing-page
-A  basic landing page for a fictional product with interactivity 
+A  basic landing page for a fictional client with interactivity 
