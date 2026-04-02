@@ -9,14 +9,14 @@ body {
 .hero {
     background:
         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url("plumbing.jpg");
+        url("Screenshot_20260401-101022_1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     padding: 80px 20px;
     text-align: center;
-    color: white;
+    color: green-blue;
 }
 
 /* CONTAINER */
