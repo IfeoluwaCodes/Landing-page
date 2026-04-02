@@ -1,10 +1,14 @@
-body {
-    
-    background-image: url("Screenshot_20260401-101022_1.png");
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url("");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    }
+
+body { 
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f4fafa;
