@@ -1,55 +1,42 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* HERO SECTION (this is where your background image should live) */
 .hero {
     background:
-        linear-gradient(rgba(244,250,250,0.4), rgba(244,250,250,0.4)),
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
         url("plumbing.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-blend-mode: overlay;
+
     padding: 80px 20px;
+    text-align: center;
     color: white;
-    text-align: center;
 }
 
-button {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
 }
 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
-
-width: 100%;
-max-width: 800px;
-margin: auto;
-
-body { 
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4fafa;
-    color: #222;
-}
-
-header {
-    background: #dff5f2;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-header h1 {
+/* HEADINGS */
+h1 {
     margin: 0;
     font-size: 28px;
+}
+
+h2 {
     color: #004d40;
 }
 
-header p {
-    font-size: 16px;
-}
-
+/* BUTTONS */
 .button {
     display: inline-block;
     margin: 10px;
@@ -60,49 +47,30 @@ header p {
     border-radius: 5px;
 }
 
-.section {
-    margin: 20px 0;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
+/* SECTIONS */
+section {
+    margin: 20px;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
-
 }
 
-.section summary {
+/* COLLAPSIBLE (DETAILS) */
+details {
+    margin: 20px 0;
+}
+
+summary {
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
     background: #009688;
     color: white;
-}
-
-.section .content {
-    padding: 15px;
-    }
-
-details {
-    margin: 20px 0;
-    background: #f4fafa;
-    padding: 10px;
     border-radius: 5px;
 }
 
-summary {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-h2 {
-    color: #004d40;
-}
-
-ul {
-    padding-left: 20px;
-}
-
+/* FOOTER */
 footer {
     background: #009688;
     color: white;
@@ -110,3 +78,9 @@ footer {
     padding: 15px;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
