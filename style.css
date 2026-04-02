@@ -36,20 +36,44 @@ body {
 .hero p {
     font-size: 18px;
 }
+.hero a {
+    margin-top: 20px;
+}
 
 /* BUTTON */
 .button {
     margin-top: 15px;
-    padding: 12px 25px;
+    padding: 14px 26px;
     background: #0F766E;
     color: white;
-    border: none;
     border-radius: 6px;
-    cursor: pointer;
     text-decoration: none;
     display: inline-block;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
 
+/* Hover effect (this is what you're missing) */
+.button:hover {
+    background: #0d5f59;
+    transform: translateY(-2px);
+}
+
+/* Add spacing between buttons */
+.button + .button {
+    margin-left: 10px;
+}
+.call-btn {
+    background: #0F766E;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    }
 /* GENERAL CONTAINER */
 .container {
     max-width: 900px;
