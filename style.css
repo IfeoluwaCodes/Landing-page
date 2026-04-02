@@ -38,7 +38,7 @@ body {
 }
 
 /* BUTTON */
-button {
+.button {
     margin-top: 15px;
     padding: 12px 25px;
     background: #0F766E;
@@ -46,6 +46,8 @@ button {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* GENERAL CONTAINER */
