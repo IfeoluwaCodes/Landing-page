@@ -2,6 +2,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                       url("Screenshot_20260401-101022_1.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     padding: 80px 20px;
     color: white;
