@@ -42,7 +42,7 @@ body {
 
 /* BUTTON */
 .button {
-    padding: 14px 26px;
+    padding: 16px 28px;
     background: #0F766E;
     color: white;
     border-radius: 30px;
@@ -53,6 +53,7 @@ body {
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: 0.3s ease;
+    letter-spacing: 0.5px;
 }
 
 .button:hover {
