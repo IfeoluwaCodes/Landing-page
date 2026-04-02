@@ -2,85 +2,108 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: #f4fafa;
     color: #222;
 }
 
-/* HERO SECTION (this is where your background image should live) */
+/* HERO (FULL SCREEN FIRST VIEW) */
 .hero {
+    height: 100vh; /* THIS is what you were missing */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
     background:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url("Screenshot_20260401-101022_1.jpg");
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("plumbing.jpg");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    padding: 80px 20px;
-    text-align: center;
-    color: green-blue;
 }
 
-/* CONTAINER */
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
+/* HERO TEXT */
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
-/* HEADINGS */
-h1 {
-    margin: 0;
-    font-size: 28px;
+.hero p {
+    font-size: 18px;
 }
 
-h2 {
-    color: #004d40;
-}
-
-/* BUTTONS */
-.button {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    background: #009688;
+/* BUTTON */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #0F766E;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
-/* SECTIONS */
-section {
-    margin: 20px;
+/* GENERAL CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
 }
 
-/* COLLAPSIBLE (DETAILS) */
+/* SECTIONS (THE CLEAN BLOCK STYLE YOU WANTED) */
+section {
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 900px;
+
+    background: #ECFEFF;
+    border-left: 5px solid #0F766E;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* COLLAPSIBLE */
 details {
-    margin: 20px 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 summary {
     padding: 15px;
-    font-size: 18px;
+    background: #0F766E;
+    color: white;
     font-weight: bold;
     cursor: pointer;
-    background: #009688;
-    color: white;
-    border-radius: 5px;
+}
+
+details p {
+    padding: 15px;
+    background: #ECFEFF;
+    margin: 0;
 }
 
 /* FOOTER */
 footer {
-    background: #009688;
+    background: #0F766E;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
 }
 
-/* RESPONSIVE */
+/* MOBILE FIX */
 @media (max-width: 768px) {
-    .container {
-        width: 95%;
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 }
