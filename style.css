@@ -42,29 +42,39 @@ body {
 
 /* BUTTON */
 .button {
-    margin-top: 15px;
     padding: 14px 26px;
     background: #0F766E;
     color: white;
-    border-radius: 6px;
+    border-radius: 30px;
     text-decoration: none;
-    display: inline-block;
-    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     transition: 0.3s ease;
 }
 
-/* Hover effect (this is what you're missing) */
 .button:hover {
-    background: #0d5f59;
     transform: translateY(-2px);
 }
 
-/* Add spacing between buttons */
-.button + .button {
-    margin-left: 10px;
+/* Button group (side by side) */
+.btn-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+/* Individual button colors */
 .call-btn {
     background: #0F766E;
+}
+
+.call-btn:hover {
+    background: #0d5f59;
 }
 
 .whatsapp-btn {
@@ -73,8 +83,7 @@ body {
 
 .whatsapp-btn:hover {
     background: #1ebe5d;
-    }
-/* GENERAL CONTAINER */
+}/* GENERAL CONTAINER */
 .container {
     max-width: 900px;
     margin: auto;
